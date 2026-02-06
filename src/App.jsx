@@ -1,15 +1,19 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Quotes from './components/Quotes'
-import Map from './components/Map'
+import Login from './pages/Login'
+import Pokedex from './pages/pokedex'
 
 function App() {
 
   return (
-    <>
-      <h1>Bienvenidos</h1>
-      <Quotes />
-      <Map />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path='/pokedex' element={<Pokedex />} />
+        <Route path='*' element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 

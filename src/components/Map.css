@@ -57,5 +57,11 @@ h1 {
   font-weight: 800;
   letter-spacing: -1px;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: #50372c;
+}
+
+.mapboxgl-popup-content {
+              
+  
+  border: 1px solid #eeff00; 
 }
